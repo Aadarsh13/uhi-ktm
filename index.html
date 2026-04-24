@@ -37,17 +37,17 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet.photon.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/NDBIofMetropolitancities_4.js"></script>
-        <script src="data/NDVIofMetropolitancities_5.js"></script>
-        <script src="data/LSTCofMetropolitancities_6.js"></script>
-        <script src="data/LSTCofKathmanduvalley_7.js"></script>
-        <script src="data/UHIMapofKathmanduvalley_8.js"></script>
-        <script src="data/MetropolitanCities_9.js"></script>
-        <script src="data/KathmanduValley_10.js"></script>
+        <script src="data/NDBIofMetropolitancities_6.js"></script>
+        <script src="data/NDVIofMetropolitancities_7.js"></script>
+        <script src="data/LSTCofMetropolitancities_8.js"></script>
+        <script src="data/LSTCofKathmanduvalley_9.js"></script>
+        <script src="data/UHIMapofKathmanduvalley_10.js"></script>
+        <script src="data/MetropolitanCities_11.js"></script>
+        <script src="data/KathmanduValley_12.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[27.390702737419772,85.09143805595299],[27.845377228312433,85.79811518929705]]);
+        }).fitBounds([[27.59487952442508,85.23058510494313],[27.765538817802028,85.49585702210217]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -149,23 +149,39 @@
             maxZoom: 28,
         });
         layer_GoogleSatelliteHybrid_1;
-        map.createPane('pane_FalseColourCompositeRaster_2');
-        map.getPane('pane_FalseColourCompositeRaster_2').style.zIndex = 402;
-        var img_FalseColourCompositeRaster_2 = 'data/FalseColourCompositeRaster_2.png';
-        var img_bounds_FalseColourCompositeRaster_2 = [[27.40043787687485,85.18654152610645],[27.81905622590501,85.57009783676556]];
-        var layer_FalseColourCompositeRaster_2 = new L.imageOverlay(img_FalseColourCompositeRaster_2,
-                                              img_bounds_FalseColourCompositeRaster_2,
-                                              {pane: 'pane_FalseColourCompositeRaster_2'});
-        bounds_group.addLayer(layer_FalseColourCompositeRaster_2);
-        map.createPane('pane_TrueColourCompositeRaster_3');
-        map.getPane('pane_TrueColourCompositeRaster_3').style.zIndex = 403;
-        var img_TrueColourCompositeRaster_3 = 'data/TrueColourCompositeRaster_3.png';
-        var img_bounds_TrueColourCompositeRaster_3 = [[27.40043787687485,85.18654152610645],[27.81905622590501,85.57009783676556]];
-        var layer_TrueColourCompositeRaster_3 = new L.imageOverlay(img_TrueColourCompositeRaster_3,
-                                              img_bounds_TrueColourCompositeRaster_3,
-                                              {pane: 'pane_TrueColourCompositeRaster_3'});
-        bounds_group.addLayer(layer_TrueColourCompositeRaster_3);
-        function pop_NDBIofMetropolitancities_4(feature, layer) {
+        map.createPane('pane_COSTCorrectedBand5Raster_2');
+        map.getPane('pane_COSTCorrectedBand5Raster_2').style.zIndex = 402;
+        var img_COSTCorrectedBand5Raster_2 = 'data/COSTCorrectedBand5Raster_2.png';
+        var img_bounds_COSTCorrectedBand5Raster_2 = [[27.606218426829802,85.27649268094996],[27.75031051859713,85.37415722113758]];
+        var layer_COSTCorrectedBand5Raster_2 = new L.imageOverlay(img_COSTCorrectedBand5Raster_2,
+                                              img_bounds_COSTCorrectedBand5Raster_2,
+                                              {pane: 'pane_COSTCorrectedBand5Raster_2'});
+        bounds_group.addLayer(layer_COSTCorrectedBand5Raster_2);
+        map.createPane('pane_OriginalBand5Raster_3');
+        map.getPane('pane_OriginalBand5Raster_3').style.zIndex = 403;
+        var img_OriginalBand5Raster_3 = 'data/OriginalBand5Raster_3.png';
+        var img_bounds_OriginalBand5Raster_3 = [[27.606218426829802,85.27649268094996],[27.75031051859713,85.37415722113758]];
+        var layer_OriginalBand5Raster_3 = new L.imageOverlay(img_OriginalBand5Raster_3,
+                                              img_bounds_OriginalBand5Raster_3,
+                                              {pane: 'pane_OriginalBand5Raster_3'});
+        bounds_group.addLayer(layer_OriginalBand5Raster_3);
+        map.createPane('pane_FalseColourCompositeRaster_4');
+        map.getPane('pane_FalseColourCompositeRaster_4').style.zIndex = 404;
+        var img_FalseColourCompositeRaster_4 = 'data/FalseColourCompositeRaster_4.png';
+        var img_bounds_FalseColourCompositeRaster_4 = [[27.40043787687485,85.18654152610645],[27.81905622590501,85.57009783676556]];
+        var layer_FalseColourCompositeRaster_4 = new L.imageOverlay(img_FalseColourCompositeRaster_4,
+                                              img_bounds_FalseColourCompositeRaster_4,
+                                              {pane: 'pane_FalseColourCompositeRaster_4'});
+        bounds_group.addLayer(layer_FalseColourCompositeRaster_4);
+        map.createPane('pane_TrueColourCompositeRaster_5');
+        map.getPane('pane_TrueColourCompositeRaster_5').style.zIndex = 405;
+        var img_TrueColourCompositeRaster_5 = 'data/TrueColourCompositeRaster_5.png';
+        var img_bounds_TrueColourCompositeRaster_5 = [[27.40043787687485,85.18654152610645],[27.81905622590501,85.57009783676556]];
+        var layer_TrueColourCompositeRaster_5 = new L.imageOverlay(img_TrueColourCompositeRaster_5,
+                                              img_bounds_TrueColourCompositeRaster_5,
+                                              {pane: 'pane_TrueColourCompositeRaster_5'});
+        bounds_group.addLayer(layer_TrueColourCompositeRaster_5);
+        function pop_NDBIofMetropolitancities_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Id'] !== null ? autolinker.link(String(feature.properties['Id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -182,11 +198,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_NDBIofMetropolitancities_4_0(feature) {
+        function style_NDBIofMetropolitancities_6_0(feature) {
             switch(String(feature.properties['Value'])) {
                 case '1':
                     return {
-                pane: 'pane_NDBIofMetropolitancities_4',
+                pane: 'pane_NDBIofMetropolitancities_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -201,7 +217,7 @@
                     break;
                 case '2':
                     return {
-                pane: 'pane_NDBIofMetropolitancities_4',
+                pane: 'pane_NDBIofMetropolitancities_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -216,7 +232,7 @@
                     break;
                 case '3':
                     return {
-                pane: 'pane_NDBIofMetropolitancities_4',
+                pane: 'pane_NDBIofMetropolitancities_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -231,7 +247,7 @@
                     break;
                 case '4':
                     return {
-                pane: 'pane_NDBIofMetropolitancities_4',
+                pane: 'pane_NDBIofMetropolitancities_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -246,7 +262,7 @@
                     break;
                 case '5':
                     return {
-                pane: 'pane_NDBIofMetropolitancities_4',
+                pane: 'pane_NDBIofMetropolitancities_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -261,20 +277,20 @@
                     break;
             }
         }
-        map.createPane('pane_NDBIofMetropolitancities_4');
-        map.getPane('pane_NDBIofMetropolitancities_4').style.zIndex = 404;
-        map.getPane('pane_NDBIofMetropolitancities_4').style['mix-blend-mode'] = 'normal';
-        var layer_NDBIofMetropolitancities_4 = new L.geoJson(json_NDBIofMetropolitancities_4, {
+        map.createPane('pane_NDBIofMetropolitancities_6');
+        map.getPane('pane_NDBIofMetropolitancities_6').style.zIndex = 406;
+        map.getPane('pane_NDBIofMetropolitancities_6').style['mix-blend-mode'] = 'normal';
+        var layer_NDBIofMetropolitancities_6 = new L.geoJson(json_NDBIofMetropolitancities_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_NDBIofMetropolitancities_4',
-            layerName: 'layer_NDBIofMetropolitancities_4',
-            pane: 'pane_NDBIofMetropolitancities_4',
-            onEachFeature: pop_NDBIofMetropolitancities_4,
-            style: style_NDBIofMetropolitancities_4_0,
+            dataVar: 'json_NDBIofMetropolitancities_6',
+            layerName: 'layer_NDBIofMetropolitancities_6',
+            pane: 'pane_NDBIofMetropolitancities_6',
+            onEachFeature: pop_NDBIofMetropolitancities_6,
+            style: style_NDBIofMetropolitancities_6_0,
         });
-        bounds_group.addLayer(layer_NDBIofMetropolitancities_4);
-        function pop_NDVIofMetropolitancities_5(feature, layer) {
+        bounds_group.addLayer(layer_NDBIofMetropolitancities_6);
+        function pop_NDVIofMetropolitancities_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Id'] !== null ? autolinker.link(String(feature.properties['Id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -291,11 +307,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_NDVIofMetropolitancities_5_0(feature) {
+        function style_NDVIofMetropolitancities_7_0(feature) {
             switch(String(feature.properties['Value'])) {
                 case '1':
                     return {
-                pane: 'pane_NDVIofMetropolitancities_5',
+                pane: 'pane_NDVIofMetropolitancities_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -310,7 +326,7 @@
                     break;
                 case '2':
                     return {
-                pane: 'pane_NDVIofMetropolitancities_5',
+                pane: 'pane_NDVIofMetropolitancities_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -325,7 +341,7 @@
                     break;
                 case '3':
                     return {
-                pane: 'pane_NDVIofMetropolitancities_5',
+                pane: 'pane_NDVIofMetropolitancities_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -340,7 +356,7 @@
                     break;
                 case '4':
                     return {
-                pane: 'pane_NDVIofMetropolitancities_5',
+                pane: 'pane_NDVIofMetropolitancities_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -355,7 +371,7 @@
                     break;
                 case '5':
                     return {
-                pane: 'pane_NDVIofMetropolitancities_5',
+                pane: 'pane_NDVIofMetropolitancities_7',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -370,20 +386,20 @@
                     break;
             }
         }
-        map.createPane('pane_NDVIofMetropolitancities_5');
-        map.getPane('pane_NDVIofMetropolitancities_5').style.zIndex = 405;
-        map.getPane('pane_NDVIofMetropolitancities_5').style['mix-blend-mode'] = 'normal';
-        var layer_NDVIofMetropolitancities_5 = new L.geoJson(json_NDVIofMetropolitancities_5, {
+        map.createPane('pane_NDVIofMetropolitancities_7');
+        map.getPane('pane_NDVIofMetropolitancities_7').style.zIndex = 407;
+        map.getPane('pane_NDVIofMetropolitancities_7').style['mix-blend-mode'] = 'normal';
+        var layer_NDVIofMetropolitancities_7 = new L.geoJson(json_NDVIofMetropolitancities_7, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_NDVIofMetropolitancities_5',
-            layerName: 'layer_NDVIofMetropolitancities_5',
-            pane: 'pane_NDVIofMetropolitancities_5',
-            onEachFeature: pop_NDVIofMetropolitancities_5,
-            style: style_NDVIofMetropolitancities_5_0,
+            dataVar: 'json_NDVIofMetropolitancities_7',
+            layerName: 'layer_NDVIofMetropolitancities_7',
+            pane: 'pane_NDVIofMetropolitancities_7',
+            onEachFeature: pop_NDVIofMetropolitancities_7,
+            style: style_NDVIofMetropolitancities_7_0,
         });
-        bounds_group.addLayer(layer_NDVIofMetropolitancities_5);
-        function pop_LSTCofMetropolitancities_6(feature, layer) {
+        bounds_group.addLayer(layer_NDVIofMetropolitancities_7);
+        function pop_LSTCofMetropolitancities_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Value</th>\
@@ -397,11 +413,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_LSTCofMetropolitancities_6_0(feature) {
+        function style_LSTCofMetropolitancities_8_0(feature) {
             switch(String(feature.properties['Value'])) {
                 case '1':
                     return {
-                pane: 'pane_LSTCofMetropolitancities_6',
+                pane: 'pane_LSTCofMetropolitancities_8',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -416,7 +432,7 @@
                     break;
                 case '2':
                     return {
-                pane: 'pane_LSTCofMetropolitancities_6',
+                pane: 'pane_LSTCofMetropolitancities_8',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -431,7 +447,7 @@
                     break;
                 case '3':
                     return {
-                pane: 'pane_LSTCofMetropolitancities_6',
+                pane: 'pane_LSTCofMetropolitancities_8',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -446,7 +462,7 @@
                     break;
                 case '4':
                     return {
-                pane: 'pane_LSTCofMetropolitancities_6',
+                pane: 'pane_LSTCofMetropolitancities_8',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -461,7 +477,7 @@
                     break;
                 case '5':
                     return {
-                pane: 'pane_LSTCofMetropolitancities_6',
+                pane: 'pane_LSTCofMetropolitancities_8',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -476,20 +492,20 @@
                     break;
             }
         }
-        map.createPane('pane_LSTCofMetropolitancities_6');
-        map.getPane('pane_LSTCofMetropolitancities_6').style.zIndex = 406;
-        map.getPane('pane_LSTCofMetropolitancities_6').style['mix-blend-mode'] = 'normal';
-        var layer_LSTCofMetropolitancities_6 = new L.geoJson(json_LSTCofMetropolitancities_6, {
+        map.createPane('pane_LSTCofMetropolitancities_8');
+        map.getPane('pane_LSTCofMetropolitancities_8').style.zIndex = 408;
+        map.getPane('pane_LSTCofMetropolitancities_8').style['mix-blend-mode'] = 'normal';
+        var layer_LSTCofMetropolitancities_8 = new L.geoJson(json_LSTCofMetropolitancities_8, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_LSTCofMetropolitancities_6',
-            layerName: 'layer_LSTCofMetropolitancities_6',
-            pane: 'pane_LSTCofMetropolitancities_6',
-            onEachFeature: pop_LSTCofMetropolitancities_6,
-            style: style_LSTCofMetropolitancities_6_0,
+            dataVar: 'json_LSTCofMetropolitancities_8',
+            layerName: 'layer_LSTCofMetropolitancities_8',
+            pane: 'pane_LSTCofMetropolitancities_8',
+            onEachFeature: pop_LSTCofMetropolitancities_8,
+            style: style_LSTCofMetropolitancities_8_0,
         });
-        bounds_group.addLayer(layer_LSTCofMetropolitancities_6);
-        function pop_LSTCofKathmanduvalley_7(feature, layer) {
+        bounds_group.addLayer(layer_LSTCofMetropolitancities_8);
+        function pop_LSTCofKathmanduvalley_9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Value</th>\
@@ -503,11 +519,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_LSTCofKathmanduvalley_7_0(feature) {
+        function style_LSTCofKathmanduvalley_9_0(feature) {
             switch(String(feature.properties['Value'])) {
                 case '1':
                     return {
-                pane: 'pane_LSTCofKathmanduvalley_7',
+                pane: 'pane_LSTCofKathmanduvalley_9',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -522,7 +538,7 @@
                     break;
                 case '2':
                     return {
-                pane: 'pane_LSTCofKathmanduvalley_7',
+                pane: 'pane_LSTCofKathmanduvalley_9',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -537,7 +553,7 @@
                     break;
                 case '3':
                     return {
-                pane: 'pane_LSTCofKathmanduvalley_7',
+                pane: 'pane_LSTCofKathmanduvalley_9',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -552,7 +568,7 @@
                     break;
                 case '4':
                     return {
-                pane: 'pane_LSTCofKathmanduvalley_7',
+                pane: 'pane_LSTCofKathmanduvalley_9',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -567,7 +583,7 @@
                     break;
                 case '5':
                     return {
-                pane: 'pane_LSTCofKathmanduvalley_7',
+                pane: 'pane_LSTCofKathmanduvalley_9',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -582,20 +598,20 @@
                     break;
             }
         }
-        map.createPane('pane_LSTCofKathmanduvalley_7');
-        map.getPane('pane_LSTCofKathmanduvalley_7').style.zIndex = 407;
-        map.getPane('pane_LSTCofKathmanduvalley_7').style['mix-blend-mode'] = 'normal';
-        var layer_LSTCofKathmanduvalley_7 = new L.geoJson(json_LSTCofKathmanduvalley_7, {
+        map.createPane('pane_LSTCofKathmanduvalley_9');
+        map.getPane('pane_LSTCofKathmanduvalley_9').style.zIndex = 409;
+        map.getPane('pane_LSTCofKathmanduvalley_9').style['mix-blend-mode'] = 'normal';
+        var layer_LSTCofKathmanduvalley_9 = new L.geoJson(json_LSTCofKathmanduvalley_9, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_LSTCofKathmanduvalley_7',
-            layerName: 'layer_LSTCofKathmanduvalley_7',
-            pane: 'pane_LSTCofKathmanduvalley_7',
-            onEachFeature: pop_LSTCofKathmanduvalley_7,
-            style: style_LSTCofKathmanduvalley_7_0,
+            dataVar: 'json_LSTCofKathmanduvalley_9',
+            layerName: 'layer_LSTCofKathmanduvalley_9',
+            pane: 'pane_LSTCofKathmanduvalley_9',
+            onEachFeature: pop_LSTCofKathmanduvalley_9,
+            style: style_LSTCofKathmanduvalley_9_0,
         });
-        bounds_group.addLayer(layer_LSTCofKathmanduvalley_7);
-        function pop_UHIMapofKathmanduvalley_8(feature, layer) {
+        bounds_group.addLayer(layer_LSTCofKathmanduvalley_9);
+        function pop_UHIMapofKathmanduvalley_10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Value</th>\
@@ -609,11 +625,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_UHIMapofKathmanduvalley_8_0(feature) {
+        function style_UHIMapofKathmanduvalley_10_0(feature) {
             switch(String(feature.properties['Value'])) {
                 case '1':
                     return {
-                pane: 'pane_UHIMapofKathmanduvalley_8',
+                pane: 'pane_UHIMapofKathmanduvalley_10',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -628,7 +644,7 @@
                     break;
                 case '2':
                     return {
-                pane: 'pane_UHIMapofKathmanduvalley_8',
+                pane: 'pane_UHIMapofKathmanduvalley_10',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -643,7 +659,7 @@
                     break;
                 case '3':
                     return {
-                pane: 'pane_UHIMapofKathmanduvalley_8',
+                pane: 'pane_UHIMapofKathmanduvalley_10',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -658,7 +674,7 @@
                     break;
                 case '4':
                     return {
-                pane: 'pane_UHIMapofKathmanduvalley_8',
+                pane: 'pane_UHIMapofKathmanduvalley_10',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -673,7 +689,7 @@
                     break;
                 case '5':
                     return {
-                pane: 'pane_UHIMapofKathmanduvalley_8',
+                pane: 'pane_UHIMapofKathmanduvalley_10',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.0)',
                 dashArray: '',
@@ -688,21 +704,21 @@
                     break;
             }
         }
-        map.createPane('pane_UHIMapofKathmanduvalley_8');
-        map.getPane('pane_UHIMapofKathmanduvalley_8').style.zIndex = 408;
-        map.getPane('pane_UHIMapofKathmanduvalley_8').style['mix-blend-mode'] = 'normal';
-        var layer_UHIMapofKathmanduvalley_8 = new L.geoJson(json_UHIMapofKathmanduvalley_8, {
+        map.createPane('pane_UHIMapofKathmanduvalley_10');
+        map.getPane('pane_UHIMapofKathmanduvalley_10').style.zIndex = 410;
+        map.getPane('pane_UHIMapofKathmanduvalley_10').style['mix-blend-mode'] = 'normal';
+        var layer_UHIMapofKathmanduvalley_10 = new L.geoJson(json_UHIMapofKathmanduvalley_10, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_UHIMapofKathmanduvalley_8',
-            layerName: 'layer_UHIMapofKathmanduvalley_8',
-            pane: 'pane_UHIMapofKathmanduvalley_8',
-            onEachFeature: pop_UHIMapofKathmanduvalley_8,
-            style: style_UHIMapofKathmanduvalley_8_0,
+            dataVar: 'json_UHIMapofKathmanduvalley_10',
+            layerName: 'layer_UHIMapofKathmanduvalley_10',
+            pane: 'pane_UHIMapofKathmanduvalley_10',
+            onEachFeature: pop_UHIMapofKathmanduvalley_10,
+            style: style_UHIMapofKathmanduvalley_10_0,
         });
-        bounds_group.addLayer(layer_UHIMapofKathmanduvalley_8);
-        map.addLayer(layer_UHIMapofKathmanduvalley_8);
-        function pop_MetropolitanCities_9(feature, layer) {
+        bounds_group.addLayer(layer_UHIMapofKathmanduvalley_10);
+        map.addLayer(layer_UHIMapofKathmanduvalley_10);
+        function pop_MetropolitanCities_11(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">DISTRICT</th>\
@@ -724,9 +740,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_MetropolitanCities_9_0() {
+        function style_MetropolitanCities_11_0() {
             return {
-                pane: 'pane_MetropolitanCities_9',
+                pane: 'pane_MetropolitanCities_11',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '5.0,1.0',
@@ -739,20 +755,20 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_MetropolitanCities_9');
-        map.getPane('pane_MetropolitanCities_9').style.zIndex = 409;
-        map.getPane('pane_MetropolitanCities_9').style['mix-blend-mode'] = 'normal';
-        var layer_MetropolitanCities_9 = new L.geoJson(json_MetropolitanCities_9, {
+        map.createPane('pane_MetropolitanCities_11');
+        map.getPane('pane_MetropolitanCities_11').style.zIndex = 411;
+        map.getPane('pane_MetropolitanCities_11').style['mix-blend-mode'] = 'normal';
+        var layer_MetropolitanCities_11 = new L.geoJson(json_MetropolitanCities_11, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_MetropolitanCities_9',
-            layerName: 'layer_MetropolitanCities_9',
-            pane: 'pane_MetropolitanCities_9',
-            onEachFeature: pop_MetropolitanCities_9,
-            style: style_MetropolitanCities_9_0,
+            dataVar: 'json_MetropolitanCities_11',
+            layerName: 'layer_MetropolitanCities_11',
+            pane: 'pane_MetropolitanCities_11',
+            onEachFeature: pop_MetropolitanCities_11,
+            style: style_MetropolitanCities_11_0,
         });
-        bounds_group.addLayer(layer_MetropolitanCities_9);
-        function pop_KathmanduValley_10(feature, layer) {
+        bounds_group.addLayer(layer_MetropolitanCities_11);
+        function pop_KathmanduValley_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">DISTRICT</th>\
@@ -766,9 +782,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_KathmanduValley_10_0() {
+        function style_KathmanduValley_12_0() {
             return {
-                pane: 'pane_KathmanduValley_10',
+                pane: 'pane_KathmanduValley_12',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -781,30 +797,32 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_KathmanduValley_10');
-        map.getPane('pane_KathmanduValley_10').style.zIndex = 410;
-        map.getPane('pane_KathmanduValley_10').style['mix-blend-mode'] = 'normal';
-        var layer_KathmanduValley_10 = new L.geoJson(json_KathmanduValley_10, {
+        map.createPane('pane_KathmanduValley_12');
+        map.getPane('pane_KathmanduValley_12').style.zIndex = 412;
+        map.getPane('pane_KathmanduValley_12').style['mix-blend-mode'] = 'normal';
+        var layer_KathmanduValley_12 = new L.geoJson(json_KathmanduValley_12, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_KathmanduValley_10',
-            layerName: 'layer_KathmanduValley_10',
-            pane: 'pane_KathmanduValley_10',
-            onEachFeature: pop_KathmanduValley_10,
-            style: style_KathmanduValley_10_0,
+            dataVar: 'json_KathmanduValley_12',
+            layerName: 'layer_KathmanduValley_12',
+            pane: 'pane_KathmanduValley_12',
+            onEachFeature: pop_KathmanduValley_12,
+            style: style_KathmanduValley_12_0,
         });
-        bounds_group.addLayer(layer_KathmanduValley_10);
-        map.addLayer(layer_KathmanduValley_10);
+        bounds_group.addLayer(layer_KathmanduValley_12);
+        map.addLayer(layer_KathmanduValley_12);
         var overlaysTree = [
-            {label: '<img src="legend/KathmanduValley_10.png" /> Kathmandu Valley', layer: layer_KathmanduValley_10},
-            {label: '<img src="legend/MetropolitanCities_9.png" /> Metropolitan Cities', layer: layer_MetropolitanCities_9},
-            {label: 'UHI Map of Kathmandu valley<br /><table><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_8_10C0.png" /></td><td>1 (<0°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_8_202C1.png" /></td><td>2 (0-2°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_8_324C2.png" /></td><td>3 (2-4°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_8_446C3.png" /></td><td>4 (4-6°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_8_56C4.png" /></td><td>5 (>6°C)</td></tr></table>', layer: layer_UHIMapofKathmanduvalley_8},
-            {label: 'LST(°C) of Kathmandu valley<br /><table><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_7_12000.png" /></td><td>1 (<20.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_7_22002501.png" /></td><td>2 (20.0-25.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_7_32503002.png" /></td><td>3 (25.0-30.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_7_43003403.png" /></td><td>4 (30.0-34.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_7_53403824.png" /></td><td>5 (34.0-38.2)</td></tr></table>', layer: layer_LSTCofKathmanduvalley_7},
-            {label: 'LST(°C) of Metropolitan cities<br /><table><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_6_12800.png" /></td><td>1 (<28.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_6_22803001.png" /></td><td>2 (28.0-30.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_6_33003202.png" /></td><td>3 (30.0-32.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_6_43203403.png" /></td><td>4 (32.0-34.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_6_53403824.png" /></td><td>5 (34.0-38.2)</td></tr></table>', layer: layer_LSTCofMetropolitancities_6},
-            {label: 'NDVI of Metropolitan cities<br /><table><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_5_10010.png" /></td><td>1 (<=0.01)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_5_2001021.png" /></td><td>2 (0.01-0.2)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_5_302042.png" /></td><td>3 (0.2-0.4)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_5_404063.png" /></td><td>4 (0.4-0.6)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_5_5064.png" /></td><td>5 (>0.6)</td></tr></table>', layer: layer_NDVIofMetropolitancities_5},
-            {label: 'NDBI of Metropolitan cities<br /><table><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_4_1000.png" /></td><td>1 (<=0.0)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_4_200011.png" /></td><td>2 (0.0-0.1)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_4_301022.png" /></td><td>3 (0.1-0.2)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_4_402043.png" /></td><td>4 (0.2-0.4)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_4_5044.png" /></td><td>5 (>0.4)</td></tr></table>', layer: layer_NDBIofMetropolitancities_4},
-            {label: "True Colour Composite Raster", layer: layer_TrueColourCompositeRaster_3},
-            {label: "False Colour Composite Raster", layer: layer_FalseColourCompositeRaster_2},
+            {label: '<img src="legend/KathmanduValley_12.png" /> Kathmandu Valley', layer: layer_KathmanduValley_12},
+            {label: '<img src="legend/MetropolitanCities_11.png" /> Metropolitan Cities', layer: layer_MetropolitanCities_11},
+            {label: 'UHI Map of Kathmandu valley<br /><table><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_10_10C0.png" /></td><td>1 (<0°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_10_202C1.png" /></td><td>2 (0-2°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_10_324C2.png" /></td><td>3 (2-4°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_10_446C3.png" /></td><td>4 (4-6°C)</td></tr><tr><td style="text-align: center;"><img src="legend/UHIMapofKathmanduvalley_10_56C4.png" /></td><td>5 (>6°C)</td></tr></table>', layer: layer_UHIMapofKathmanduvalley_10},
+            {label: 'LST(°C) of Kathmandu valley<br /><table><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_9_12000.png" /></td><td>1 (<20.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_9_22002501.png" /></td><td>2 (20.0-25.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_9_32503002.png" /></td><td>3 (25.0-30.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_9_43003403.png" /></td><td>4 (30.0-34.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofKathmanduvalley_9_53403824.png" /></td><td>5 (34.0-38.2)</td></tr></table>', layer: layer_LSTCofKathmanduvalley_9},
+            {label: 'LST(°C) of Metropolitan cities<br /><table><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_8_12800.png" /></td><td>1 (<28.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_8_22803001.png" /></td><td>2 (28.0-30.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_8_33003202.png" /></td><td>3 (30.0-32.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_8_43203403.png" /></td><td>4 (32.0-34.0)</td></tr><tr><td style="text-align: center;"><img src="legend/LSTCofMetropolitancities_8_53403824.png" /></td><td>5 (34.0-38.2)</td></tr></table>', layer: layer_LSTCofMetropolitancities_8},
+            {label: 'NDVI of Metropolitan cities<br /><table><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_7_10010.png" /></td><td>1 (<=0.01)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_7_2001021.png" /></td><td>2 (0.01-0.2)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_7_302042.png" /></td><td>3 (0.2-0.4)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_7_404063.png" /></td><td>4 (0.4-0.6)</td></tr><tr><td style="text-align: center;"><img src="legend/NDVIofMetropolitancities_7_5064.png" /></td><td>5 (>0.6)</td></tr></table>', layer: layer_NDVIofMetropolitancities_7},
+            {label: 'NDBI of Metropolitan cities<br /><table><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_6_1000.png" /></td><td>1 (<=0.0)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_6_200011.png" /></td><td>2 (0.0-0.1)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_6_301022.png" /></td><td>3 (0.1-0.2)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_6_402043.png" /></td><td>4 (0.2-0.4)</td></tr><tr><td style="text-align: center;"><img src="legend/NDBIofMetropolitancities_6_5044.png" /></td><td>5 (>0.4)</td></tr></table>', layer: layer_NDBIofMetropolitancities_6},
+            {label: "True Colour Composite Raster", layer: layer_TrueColourCompositeRaster_5},
+            {label: "False Colour Composite Raster", layer: layer_FalseColourCompositeRaster_4},
+            {label: "Original Band 5 Raster", layer: layer_OriginalBand5Raster_3},
+            {label: "COST Corrected Band 5 Raster", layer: layer_COSTCorrectedBand5Raster_2},
             {label: "Google Satellite Hybrid", layer: layer_GoogleSatelliteHybrid_1, radioGroup: 'bm' },
             {label: "Google Maps", layer: layer_GoogleMaps_0, radioGroup: 'bm' },]
         var lay = L.control.layers.tree(null, overlaysTree,{
